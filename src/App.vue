@@ -1,12 +1,15 @@
 <template>
     <div id="app">
         <h1>Problema de Monty Hall</h1>
+        <Gift />
     </div>
 </template>
 
 <script>
+import Gift from './components/Gift'
 export default {
-
+    name: 'App',
+    components: { Gift }
 }
 </script>
 
@@ -23,7 +26,7 @@ export default {
     }
 
     #app {
-        display: flez;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
